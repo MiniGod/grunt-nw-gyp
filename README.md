@@ -1,8 +1,8 @@
 # grunt-nw-gyp
 
 [![Node Package](http://img.shields.io/npm/v/grunt-nw-gyp.svg)](https://www.npmjs.org/package/grunt-nw-gyp)
-<!--[![Linux Build Status](http://img.shields.io/travis/SonicHedgehog/grunt-nw-gyp/develop.svg)](https://travis-ci.org/SonicHedgehog/grunt-nw-gyp)
-[![Windows Build Status](http://img.shields.io/appveyor/ci/SonicHedgehog/grunt-nw-gyp.svg)](https://ci.appveyor.com/project/SonicHedgehog/grunt-nw-gyp)-->
+[![Linux Build Status](http://img.shields.io/travis/MiniGod/grunt-nw-gyp/develop.svg)](https://travis-ci.org/MiniGod/grunt-nw-gyp)
+[![Windows Build Status](http://img.shields.io/appveyor/ci/MiniGod/grunt-nw-gyp.svg)](https://ci.appveyor.com/project/MiniGod/grunt-nw-gyp)
 
 > Run nw-gyp commands from Grunt.
 
@@ -150,7 +150,7 @@ $ ./node_modules/.bin/nw-gyp install
 
 ## Release History
 
-- v0.5.0 (2014-12-02): Add [`arch` option](https://github.com/SonicHedgehog/grunt-nw-gyp#optionsarch)
+- v0.5.0 (2014-12-02): Add [`arch` option](https://github.com/MiniGod/grunt-nw-gyp#optionsarch)
 - v0.4.1 (2014-08-25): Fix rebuild not stopping execution if one of the commands has failed
 - v0.4.0 (2014-07-01): Update `nw-gyp` to `v1.x`
 - v0.3.0 (2014-03-05): Update `nw-gyp` to `v0.13.x`
