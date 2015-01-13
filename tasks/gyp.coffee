@@ -1,4 +1,4 @@
-gyp = require('node-gyp')()
+gyp = require('nw-gyp')()
 
 # The first two arguments are apparently necessary as else nopt won’t include
 # loglevel as an option.
@@ -21,8 +21,10 @@ module.exports = (grunt) ->
 
 		options = @options
 			debug: false
+			target: '0.8.6'
 
 		argv = defaultArgv.slice()
+		argv.push "--target=#{options.target}"
 
 		# If we do not push '--no-debug' node-gyp might keep the debug option on
 		# as it was set on an earlier run.
