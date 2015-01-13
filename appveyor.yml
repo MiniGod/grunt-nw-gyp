@@ -22,7 +22,7 @@ install:
   - npm install -g npm
   - npm install -g grunt-cli
   - npm install
-  - .\node_modules\.bin\nw-gyp install
+  - .\node_modules\.bin\nw-gyp install 0.8.6
 
 test_script:
   - node --version
