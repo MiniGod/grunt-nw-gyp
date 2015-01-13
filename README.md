@@ -1,10 +1,10 @@
-# grunt-node-gyp
+# grunt-nw-gyp
 
-[![Node Package](http://img.shields.io/npm/v/grunt-node-gyp.svg)](https://www.npmjs.org/package/grunt-node-gyp)
-[![Linux Build Status](http://img.shields.io/travis/SonicHedgehog/grunt-node-gyp/develop.svg)](https://travis-ci.org/SonicHedgehog/grunt-node-gyp)
-[![Windows Build Status](http://img.shields.io/appveyor/ci/SonicHedgehog/grunt-node-gyp.svg)](https://ci.appveyor.com/project/SonicHedgehog/grunt-node-gyp)
+[![Node Package](http://img.shields.io/npm/v/grunt-nw-gyp.svg)](https://www.npmjs.org/package/grunt-nw-gyp)
+<!--[![Linux Build Status](http://img.shields.io/travis/SonicHedgehog/grunt-nw-gyp/develop.svg)](https://travis-ci.org/SonicHedgehog/grunt-nw-gyp)
+[![Windows Build Status](http://img.shields.io/appveyor/ci/SonicHedgehog/grunt-nw-gyp.svg)](https://ci.appveyor.com/project/SonicHedgehog/grunt-nw-gyp)-->
 
-> Run node-gyp commands from Grunt.
+> Run nw-gyp commands from Grunt.
 
 ## Getting Started
 
@@ -13,16 +13,16 @@ This plugin requires Grunt `~0.4.0`
 If you haven’t used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you’re familiar with that process, you may install this plugin with this command:
 
 ```shell
-$ npm install grunt-node-gyp --save-dev
+$ npm install grunt-nw-gyp --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-node-gyp');
+grunt.loadNpmTasks('grunt-nw-gyp');
 ```
 
-For node-gyp to work you’ll have to install all necessary build tools for your platform, see [node-gyp’s README.md](https://github.com/TooTallNate/node-gyp#installation) for that matter. However, you do not have to install node-gyp globally as it is already included with grunt-node-gyp.
+For nw-gyp to work you’ll have to install all necessary build tools for your platform, see [nw-gyp’s README.md](https://github.com/rogerwang/nw-gyp#installation) for that matter. However, you do not have to install nw-gyp globally as it is already included with grunt-nw-gyp.
 
 ## The “gyp” task
 
@@ -50,9 +50,9 @@ grunt.initConfig({
 Type: `String`
 Default value: `rebuild`
 
-Specify node-gyp command to execute.
+Specify nw-gyp command to execute.
 
-Supported values are `configure`, `build`, `clean` and `rebuild`. See [node-gyp’s README.md](https://github.com/TooTallNate/node-gyp#commands) for command descriptions.
+Supported values are `configure`, `build`, `clean` and `rebuild`. See [nw-gyp’s README.md](https://github.com/rogerwang/nw-gyp#commands) for command descriptions.
 
 #### options.debug
 
@@ -72,7 +72,7 @@ Set the target architecture: `ia32`, `x64` or `arm`.
 
 #### Default Options
 
-This would be equivalent to `node-gyp rebuild`.
+This would be equivalent to `nw-gyp rebuild`.
 
 ```shell
 $ grunt gyp:addon
@@ -88,7 +88,7 @@ grunt.initConfig({
 
 #### Configure a debug build
 
-This would be equivalent to `node-gyp configure --debug`.
+This would be equivalent to `nw-gyp configure --debug`.
 
 ```shell
 $ grunt gyp:customTarget
@@ -109,7 +109,7 @@ grunt.initConfig({
 
 #### Build an ARM build
 
-This would be equivalent to `node-gyp build --arch=arm`.
+This would be equivalent to `nw-gyp build --arch=arm`.
 
 ```shell
 $ grunt gyp:arm
@@ -145,19 +145,19 @@ $ grunt test
 Testing might take a while as compiling takes time. You may need to install the node development header files before by executing:
 
 ```shell
-$ ./node_modules/.bin/node-gyp install
+$ ./node_modules/.bin/nw-gyp install
 ```
 
 ## Release History
 
-- v0.5.0 (2014-12-02): Add [`arch` option](https://github.com/SonicHedgehog/grunt-node-gyp#optionsarch)
+- v0.5.0 (2014-12-02): Add [`arch` option](https://github.com/SonicHedgehog/grunt-nw-gyp#optionsarch)
 - v0.4.1 (2014-08-25): Fix rebuild not stopping execution if one of the commands has failed
-- v0.4.0 (2014-07-01): Update `node-gyp` to `v1.x`
-- v0.3.0 (2014-03-05): Update `node-gyp` to `v0.13.x`
+- v0.4.0 (2014-07-01): Update `nw-gyp` to `v1.x`
+- v0.3.0 (2014-03-05): Update `nw-gyp` to `v0.13.x`
 - v0.2.1 (2014-02-21): Hotfix because v0.2.0 didn’t include the main task file `gyp.js`
-- v0.2.0 (2013-11-21): Update `node-gyp` to `v0.12.x`
+- v0.2.0 (2013-11-21): Update `nw-gyp` to `v0.12.x`
 - v0.1.0 (2013-08-25): Initial release
 
 ## License
 
-`grunt-node-gyp` is licensed under the BSD 2-clause license. See [LICENSE](./LICENSE) for the full license.
+`grunt-nw-gyp` is licensed under the BSD 2-clause license. See [LICENSE](./LICENSE) for the full license.
