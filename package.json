@@ -1,8 +1,8 @@
 {
-	"name": "grunt-node-gyp",
-	"version": "0.4.1",
+	"name": "grunt-nw-gyp",
+	"version": "0.5.0",
 	"author": "Jakob Krigovsky <jakob.krigovsky@gmail.com>",
-	"description": "Run node-gyp commands from Grunt.",
+	"description": "Run nw-gyp commands from Grunt.",
 	"contributors": [
 		{
 			"name": "Jakob Krigovsky",
@@ -21,18 +21,18 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/SonicHedgehog/grunt-node-gyp.git"
+		"url": "https://github.com/MiniGod/grunt-nw-gyp.git"
 	},
 	"keywords": [
 		"gruntplugin",
-		"node-gyp",
+		"nw-gyp",
 		"build"
 	],
 	"dependencies": {
-		"node-gyp": "1.x"
+		"nw-gyp": "^0.12.4"
 	},
 	"peerDependencies": {
-		"grunt": "~0.4"
+		"grunt": ">=0.4.0"
 	},
 	"devDependencies": {
 		"chai": "1.7.x",
